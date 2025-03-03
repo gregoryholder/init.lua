@@ -1,6 +1,6 @@
-require("theprimeagen.set")
-require("theprimeagen.remap")
-require("theprimeagen.lazy_init")
+require("grh.set")
+require("grh.remap")
+require("grh.lazy_init")
 
 -- DO.not
 -- DO NOT INCLUDE THIS

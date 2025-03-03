@@ -13,6 +13,9 @@ return {
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
     },
+    opts = {
+        inlay_hints = {enabled = true },
+    },
 
     config = function()
         require("conform").setup({
@@ -31,9 +34,9 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
+                "clangd",
                 "lua_ls",
                 "rust_analyzer",
-                "gopls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
